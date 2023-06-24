@@ -1,0 +1,1256 @@
+{
+	"info": {
+		"_postman_id": "5c29a0fb-f1fa-456b-a9b6-a3ca75b250c1",
+		"name": "Pizzaria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11768435"
+	},
+	"item": [
+		{
+			"name": "Menu",
+			"item": [
+				{
+					"name": "Alterar menu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 2,\r\n        \"name\": \"arroz\",\r\n        \"image\": \"string\",\r\n        \"description\": \"string\",\r\n        \"price\": 0\r\n    }"
+						},
+						"url": {
+							"raw": "https://localhost:7088/menu",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7088",
+							"path": [
+								"menu"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "https://localhost:7088/menu",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n        \"id\": 5,\r\n        \"name\": \"Pizza Calabresa G\",\r\n    \"image\": \"string\",\r\n    \"description\": \"Pizza de calabresa com tal\",\r\n    \"price\": 49.9,\r\n    \"isCombo\": true\r\n    }"
+								},
+								"url": {
+									"raw": "https://localhost:7088/menu",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7088",
+									"path": [
+										"menu"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 04:31:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"name\": \"Pizza Calabresa G\",\n    \"image\": \"string\",\n    \"description\": \"Pizza de calabresa com tal\",\n    \"price\": 49.9,\n    \"isCombo\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Criar item de menu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Pizza Calabresa G\",\r\n  \"image\": \"string\",\r\n  \"description\": \"Pizza de calabresa com tal\",\r\n  \"price\": 49.90\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7088/menu",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7088",
+							"path": [
+								"menu"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Criar item de menu",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Pizza Calabresa G\",\r\n  \"image\": \"string\",\r\n  \"description\": \"Pizza de calabresa com tal\",\r\n  \"price\": 49.90,\r\n  \"isCombo\":false\r\n}"
+								},
+								"url": {
+									"raw": "https://localhost:7088/menu",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7088",
+									"path": [
+										"menu"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 04:30:05 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"name\": \"Pizza Calabresa G\",\n    \"image\": \"string\",\n    \"description\": \"Pizza de calabresa com tal\",\n    \"price\": 49.9,\n    \"isCombo\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "Todos items do menu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7088/menu",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7088",
+							"path": [
+								"menu"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Todos items do menu",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7088/menu",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7088",
+									"path": [
+										"menu"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 04:30:34 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"name\": \"Pizza Calabresa G\",\n        \"image\": \"string\",\n        \"description\": \"Pizza de calabresa com tal\",\n        \"price\": 49.9,\n        \"isCombo\": true\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Pizza Calabresa G\",\n        \"image\": \"string\",\n        \"description\": \"Pizza de calabresa com tal\",\n        \"price\": 49.9,\n        \"isCombo\": false\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Item especifico por id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7088/menu/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7088",
+							"path": [
+								"menu",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Item especifico por id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7088/menu/5",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7088",
+									"path": [
+										"menu",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 04:30:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"name\": \"Pizza Calabresa G\",\n    \"image\": \"string\",\n    \"description\": \"Pizza de calabresa com tal\",\n    \"price\": 49.9,\n    \"isCombo\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "Deletar item",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7088/menu/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7088",
+							"path": [
+								"menu",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Deletar item",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7088/menu/4",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7088",
+									"path": [
+										"menu",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 04:30:17 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Fazer Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"i2terra@gmail.com\",\r\n  \"password\": \"123456789\"\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7088/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7088",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "https://localhost:7088/login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"i2terra@gmail.com\",\r\n  \"password\": \"123456789\"\r\n}"
+								},
+								"url": {
+									"raw": "https://localhost:7088/login",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7088",
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 04:18:37 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"id\": 11,\n        \"fullName\": \"israeladmin\",\n        \"cpf\": \"12318549\",\n        \"email\": \"i2terra@gmail.com\",\n        \"password\": \"\",\n        \"phone\": \"84851165\",\n        \"zipCode\": \"string\",\n        \"address\": \"string\",\n        \"number\": \"string\",\n        \"complement\": \"string\",\n        \"neighborhood\": \"string\",\n        \"role\": \"admin\"\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjExIiwibmJmIjoxNjg3NTgwMzE4LCJleHAiOjE2OTAxNzIzMTgsImlhdCI6MTY4NzU4MDMxOH0.KCvYNB_hHKMGxC88MeJYzEffm_wSNaL05Tr1-MChQJA\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Get specif order",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7088/order/0",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7088",
+							"path": [
+								"order",
+								"0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get specif order",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7088/order/5",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7088",
+									"path": [
+										"order",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 04:31:58 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"order\": {\n        \"id\": 5,\n        \"userId\": 8,\n        \"date\": \"2023-06-24T00:00:00\",\n        \"total\": 29.9,\n        \"adress\": \"casa principal\"\n    },\n    \"orderItemsDetailed\": [\n        {\n            \"orderItem\": {\n                \"id\": 7,\n                \"orderId\": 5,\n                \"menuId\": 5,\n                \"quantity\": 2\n            },\n            \"menu\": {\n                \"id\": 5,\n                \"name\": \"Pizza Calabresa G\",\n                \"image\": \"string\",\n                \"description\": \"Pizza de calabresa com tal\",\n                \"price\": 49.9,\n                \"isCombo\": true\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Recuperar todas orders com detalhes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7088/order/details",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7088",
+							"path": [
+								"order",
+								"details"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Recuperar todas orders com detalhes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7088/order/details",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7088",
+									"path": [
+										"order",
+										"details"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 03:29:28 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"order\": {\n            \"id\": 1,\n            \"userId\": 8,\n            \"date\": \"2023-06-22T00:00:00\",\n            \"total\": 50,\n            \"adress\": \"minha casa\"\n        },\n        \"orderItemsDetailed\": [\n            {\n                \"orderItem\": {\n                    \"id\": 1,\n                    \"orderId\": 1,\n                    \"menuId\": 3,\n                    \"quantity\": 2\n                },\n                \"menu\": {\n                    \"id\": 3,\n                    \"name\": \"Pizza Calabresa G\",\n                    \"image\": \"string\",\n                    \"description\": \"Pizza de calabresa com tal\",\n                    \"price\": 49.9,\n                    \"isCombo\": true\n                }\n            },\n            {\n                \"orderItem\": {\n                    \"id\": 3,\n                    \"orderId\": 1,\n                    \"menuId\": 3,\n                    \"quantity\": 3\n                },\n                \"menu\": {\n                    \"id\": 3,\n                    \"name\": \"Pizza Calabresa G\",\n                    \"image\": \"string\",\n                    \"description\": \"Pizza de calabresa com tal\",\n                    \"price\": 49.9,\n                    \"isCombo\": true\n                }\n            },\n            {\n                \"orderItem\": {\n                    \"id\": 4,\n                    \"orderId\": 1,\n                    \"menuId\": 3,\n                    \"quantity\": 2\n                },\n                \"menu\": {\n                    \"id\": 3,\n                    \"name\": \"Pizza Calabresa G\",\n                    \"image\": \"string\",\n                    \"description\": \"Pizza de calabresa com tal\",\n                    \"price\": 49.9,\n                    \"isCombo\": true\n                }\n            }\n        ]\n    },\n    {\n        \"order\": {\n            \"id\": 3,\n            \"userId\": 8,\n            \"date\": \"2023-06-23T00:00:00\",\n            \"total\": 29.9,\n            \"adress\": \"casa principal\"\n        },\n        \"orderItemsDetailed\": [\n            {\n                \"orderItem\": {\n                    \"id\": 2,\n                    \"orderId\": 3,\n                    \"menuId\": 3,\n                    \"quantity\": 2\n                },\n                \"menu\": {\n                    \"id\": 3,\n                    \"name\": \"Pizza Calabresa G\",\n                    \"image\": \"string\",\n                    \"description\": \"Pizza de calabresa com tal\",\n                    \"price\": 49.9,\n                    \"isCombo\": true\n                }\n            },\n            {\n                \"orderItem\": {\n                    \"id\": 5,\n                    \"orderId\": 3,\n                    \"menuId\": 3,\n                    \"quantity\": 4\n                },\n                \"menu\": {\n                    \"id\": 3,\n                    \"name\": \"Pizza Calabresa G\",\n                    \"image\": \"string\",\n                    \"description\": \"Pizza de calabresa com tal\",\n                    \"price\": 49.9,\n                    \"isCombo\": true\n                }\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Recuperar orders de um usuario sem detalhes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7088/order",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7088",
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Recuperar orders de um usuario sem detalhes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7088/order",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7088",
+									"path": [
+										"order"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 03:38:34 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"userId\": 8,\n        \"date\": \"2023-06-22T00:00:00\",\n        \"total\": 50,\n        \"adress\": \"minha casa\"\n    },\n    {\n        \"id\": 2,\n        \"userId\": 8,\n        \"date\": \"2023-06-23T00:00:00\",\n        \"total\": 29.9,\n        \"adress\": \"casa principal\"\n    },\n    {\n        \"id\": 3,\n        \"userId\": 8,\n        \"date\": \"2023-06-23T00:00:00\",\n        \"total\": 29.9,\n        \"adress\": \"casa principal\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Criar ordem",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"order\": {\r\n    \"total\": 29.9,\r\n    \"adress\": \"casa principal\"\r\n  },\r\n  \"items\": [\r\n    {\r\n      \"menuId\": 3,\r\n      \"quantity\": 2\r\n    }\r\n  ]\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7088/order",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7088",
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete item por id",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"order\": {\r\n    \"total\": 29.9,\r\n    \"adress\": \"casa principal\"\r\n  },\r\n  \"items\": [\r\n    {\r\n      \"menuId\": 5,\r\n      \"quantity\": 2\r\n    }\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "https://localhost:7088/order",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7088",
+									"path": [
+										"order"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 04:31:41 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"order\": {\n        \"id\": 5,\n        \"userId\": 8,\n        \"date\": \"2023-06-24T04:31:41.8727487Z\",\n        \"total\": 29.9,\n        \"adress\": \"casa principal\"\n    },\n    \"items\": [\n        {\n            \"id\": 7,\n            \"orderId\": 5,\n            \"menuId\": 5,\n            \"quantity\": 2\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Deletar ordem",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7088/order/0",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7088",
+							"path": [
+								"order",
+								"0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Deletar ordem",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpZCI6IjgiLCJuYmYiOjE2ODc0Njc2NDAsImV4cCI6MTY5MDA1OTY0MCwiaWF0IjoxNjg3NDY3NjQwfQ.rWOWn7oeEY_llm3RXQH7-oQR_j926_ioZyyCRuIzy9Y"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7088/order/4",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7088",
+									"path": [
+										"order",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 04:18:53 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Criar usuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fullName\": \"israeladmin\",\r\n  \"cpf\": \"12318549\",\r\n  \"email\": \"i2terra@gmail.com\",\r\n  \"password\": \"123456789\",\r\n  \"phone\": \"84851165\",\r\n  \"zipCode\": \"string\",\r\n  \"address\": \"string\",\r\n  \"number\": \"string\",\r\n  \"complement\": \"string\",\r\n  \"neighborhood\": \"string\",\r\n  \"role\": \"admin\"\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7088/user",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7088",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Criar usuario",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"fullName\": \"israeladmin\",\r\n  \"cpf\": \"123185w49\",\r\n  \"email\": \"i2terra2@gmail.com\",\r\n  \"password\": \"123456789\",\r\n  \"phone\": \"848513165\",\r\n  \"zipCode\": \"string\",\r\n  \"address\": \"string\",\r\n  \"number\": \"string\",\r\n  \"complement\": \"string\",\r\n  \"neighborhood\": \"string\",\r\n  \"role\": \"user\"\r\n}"
+								},
+								"url": {
+									"raw": "https://localhost:7088/user",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7088",
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 04:15:06 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 13,\n    \"fullName\": \"israeladmin\",\n    \"cpf\": \"123185w49\",\n    \"email\": \"i2terra2@gmail.com\",\n    \"password\": \"\",\n    \"phone\": \"848513165\",\n    \"zipCode\": \"string\",\n    \"address\": \"string\",\n    \"number\": \"string\",\n    \"complement\": \"string\",\n    \"neighborhood\": \"string\",\n    \"role\": \"user\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Usuario por id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7088/user/11",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7088",
+							"path": [
+								"user",
+								"11"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Usuario por id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7088/user/10",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7088",
+									"path": [
+										"user",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 04:17:26 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 10,\n    \"fullName\": \"israel 2\",\n    \"cpf\": \"12301230128\",\n    \"email\": \"i2terra@hotmail.com\",\n    \"password\": \"\",\n    \"phone\": \"strsing\",\n    \"zipCode\": \"string\",\n    \"address\": \"string\",\n    \"number\": \"string\",\n    \"complement\": \"string\",\n    \"neighborhood\": \"string\",\n    \"role\": \"user\\n\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bairros disponiveis",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7088/environment/neighborhood",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7088",
+					"path": [
+						"environment",
+						"neighborhood"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Bairros disponiveis",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7088/environment/neighborhood",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7088",
+							"path": [
+								"environment",
+								"neighborhood"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 24 Jun 2023 04:10:27 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"Vila Pinho\",\n    \"Esplanada\",\n    \"Nazaré\",\n    \"Cruzeiro\",\n    \"Vale do Jatobá\",\n    \"Vila Barragem Santa Lúcia\",\n    \"Providência\",\n    \"Flávio Marques Lisboa\",\n    \"Novo Glória\",\n    \"Guarani\",\n    \"Letícia\",\n    \"Maria Helena\",\n    \"Coqueiros\",\n    \"Coração Eucarístico\",\n    \"Palmeiras(ZS)\",\n    \"Palmeiras(ZO)\",\n    \"Itaipu\",\n    \"Candelária\",\n    \"Calafate\",\n    \"São Tomáz\",\n    \"Alto Caiçaras\",\n    \"Santo André\",\n    \"Santa Lúcia\",\n    \"Vila Clóris\",\n    \"Santa Maria\",\n    \"Ventosa\",\n    \"Brasil Industrial\",\n    \"Jardim São José\",\n    \"São Marcos\",\n    \"Santa Rosa\",\n    \"Heliópolis\",\n    \"Apolônia\",\n    \"Marçola\",\n    \"Minaslândia\",\n    \"Bonsucesso(ZS)\",\n    \"Bonsucesso(ZO)\",\n    \"Paquetá\",\n    \"Luxemburgo\",\n    \"Casa Branca\",\n    \"São Pedro\",\n    \"Grajaú\",\n    \"Nossa Senhora da Conceição\",\n    \"Paulo VI\",\n    \"Barro Preto\",\n    \"Teixeira Dias\",\n    \"Miramar\",\n    \"Santa Rita de Cássia\",\n    \"Califórnia\",\n    \"Nova Granada(ZS)\",\n    \"Nova Granada(ZO)\",\n    \"Lagoinha Leblon\",\n    \"Horto Florestal\",\n    \"Jardim Montanhês\",\n    \"Juliana\",\n    \"São Salvador\",\n    \"Coração de Jesus\",\n    \"Silveira\",\n    \"Olaria\",\n    \"Pompéia\",\n    \"Vila Cemig\",\n    \"Nova Cintra\",\n    \"Castanheira\",\n    \"Palmares(ZL)\",\n    \"Palmares(ZN)\",\n    \"Cinquentenário\",\n    \"Bandeirantes\",\n    \"Santa Helena\",\n    \"Santa Branca\",\n    \"Vila Maria\",\n    \"Alto Barroca\",\n    \"Vista Alegre\",\n    \"Vista do Sol\",\n    \"Aparecida Sétima Seção\",\n    \"Saudade\",\n    \"Lajedo\",\n    \"Graça\",\n    \"São Luíz\",\n    \"Estrela do Oriente\",\n    \"Nova Cachoeirinha\",\n    \"Ipê\",\n    \"Urca\",\n    \"Bairro Novo das Indústrias\",\n    \"Boa Viagem\",\n    \"Estoril\",\n    \"Nova Floresta\",\n    \"Monsenhor Messias\",\n    \"Liberdade\",\n    \"Madre Gertrudes\",\n    \"Pedreira Prado Lopes\",\n    \"Bonfim(ZN)\",\n    \"Bonfim(HC)\",\n    \"Nova Esperança\",\n    \"Conjunto Minascaixa\",\n    \"São Francisco\",\n    \"Solar do Barreiro\",\n    \"Nossa Senhora da Aparecida\",\n    \"Trevo\",\n    \"Confisco\",\n    \"Dom Cabral\",\n    \"Mineirão\",\n    \"Dom Silvério\",\n    \"Fernão Dias\",\n    \"Ouro Minas\",\n    \"Beira-Linha\",\n    \"Santana do Cafezal\",\n    \"Jaraguá\",\n    \"Vila Primeiro de Maio\",\n    \"Eymard\",\n    \"Novo São Lucas\",\n    \"Lagoinha(ZN)\",\n    \"Lagoinha(HC)\",\n    \"Vera Cruz\",\n    \"Maria Virgínia(ZL)\",\n    \"Maria Virgínia(ZN)\",\n    \"Carmo\",\n    \"Oeste\",\n    \"São Paulo\",\n    \"Conjunto Jatobá\",\n    \"Fazendinha\",\n    \"São Bento\",\n    \"Vila Novo São Lucas\",\n    \"Leonina\",\n    \"Bom Jesus\",\n    \"Granja de Freitas\",\n    \"Vila Paris\",\n    \"Mariano de Abreu\",\n    \"Minas Brasil\",\n    \"Monte Azul\",\n    \"Mangueiras\",\n    \"Inconfidência\",\n    \"Ermelinda\",\n    \"Jatobá\",\n    \"Vitória\",\n    \"Horto\",\n    \"Taquaril\",\n    \"Conjunto Califórnia I\",\n    \"Indaiá\",\n    \"Barroca\",\n    \"Dom Joaquim\",\n    \"Pirajá\",\n    \"Conjunto Paulo VI\",\n    \"Alto dos Pinheiros\",\n    \"Parque São José\",\n    \"Vila Califórnia\",\n    \"Novo Tupi\",\n    \"Vila Independência I\",\n    \"Conjunto Jardim Filadélfia\",\n    \"São Lucas\",\n    \"Vila Sumaré\",\n    \"São Cristóvão\",\n    \"Aarão Reis\",\n    \"Pilar\",\n    \"Santa Cecília\",\n    \"Marajó\",\n    \"Flávio de Oliveira\",\n    \"São Jorge III\",\n    \"Senhor dos Passos\",\n    \"Universo\",\n    \"Santa Rita\",\n    \"Santa Sofia\",\n    \"Conjunto Capitão Eduardo\",\n    \"Campo Alegre\",\n    \"Vila Jardim Alvorada\",\n    \"São Jorge II\",\n    \"Conjunto Celso Machado\",\n    \"Venda Nova\",\n    \"Pongelupe\",\n    \"Zilah Spósito\",\n    \"Canaã\",\n    \"São Gonçalo\",\n    \"Jonas Veiga\",\n    \"Acaiaca\",\n    \"Vila São João Batista\",\n    \"Primeiro de Maio\",\n    \"Novo Santa Cecília\",\n    \"Etelvina Carneiro\",\n    \"Parque São Pedro\",\n    \"Santa Margarida\",\n    \"Cenáculo\",\n    \"Vila Nova Cachoeirinha I\",\n    \"Belmonte\",\n    \"Penha\",\n    \"Alpes\",\n    \"Petrópolis\",\n    \"Mariquinhas\",\n    \"Esperança\",\n    \"Ernesto do Nascimento\",\n    \"Vila Santa Mônica\",\n    \"Vila Aeroporto\",\n    \"Granja Werneck(ZN)\",\n    \"Granja Werneck(ZL)\",\n    \"Braúnas\",\n    \"Águas Claras\",\n    \"Alta Tensão I\",\n    \"Frei Leopoldo\",\n    \"Universitário\",\n    \"Suzana\",\n    \"Mangabeiras\",\n    \"Vila Madre Gertrudes I\",\n    \"Vila Mangueiras\",\n    \"Barão Homem de Melo I\",\n    \"Vila São Paulo\",\n    \"Túnel de Ibirité\",\n    \"Imbaúbas\",\n    \"Ademar Maldonado\",\n    \"Itatiaia\",\n    \"João Paulo II\",\n    \"Comiteco\",\n    \"Conjunto Califórnia II\",\n    \"Jardinópolis\",\n    \"São Jorge I\",\n    \"Vila Ecológica\",\n    \"Vila Jardim São José\",\n    \"Vila Piratininga\",\n    \"São João\",\n    \"Biquinhas\",\n    \"Tiradentes\",\n    \"Pousada Santo Antônio\",\n    \"Vila Nossa Senhora Aparecida\",\n    \"Vila Antena\",\n    \"São Benedito\",\n    \"Estrela\",\n    \"Vila Átila de Paiva\",\n    \"Olhos d'Água\",\n    \"Vila Coqueiral\",\n    \"Cidade Jardim\",\n    \"Vila Trinta e Um de Março\",\n    \"São José\",\n    \"Solimões\",\n    \"Bernadete\",\n    \"Xodó-Marize\",\n    \"Vila da Luz\",\n    \"Jardim Atlântico\",\n    \"Vila Formosa\",\n    \"Vila Nova Gameleira II\",\n    \"Vila Santa Rosa\",\n    \"Engenho Nogueira\",\n    \"Vila Copacabana\",\n    \"São Francisco das Chagas\",\n    \"Vila Oeste\",\n    \"Aeroporto\",\n    \"Beija Flor\",\n    \"Capitão Eduardo\",\n    \"Marieta I\",\n    \"Átila de Paiva\",\n    \"Vila São Rafael\",\n    \"Vitória da Conquista\",\n    \"Acaba Mundo\",\n    \"Conjunto Santa Maria\",\n    \"Jardim do Vale\",\n    \"Monte São José\",\n    \"Álvaro Camargos\",\n    \"Sport Club\",\n    \"Bairro das Indústrias II\",\n    \"Conjunto Bonsucesso\",\n    \"Vila Dias\",\n    \"Vila Esplanada\",\n    \"Vila Independência II\",\n    \"Vila de Sá\",\n    \"Garças\",\n    \"Vila Boa Vista\",\n    \"Delta\",\n    \"Corumbiara\",\n    \"Madri\",\n    \"Pantanal\",\n    \"Conjunto Floramar\",\n    \"Vila Pilar\",\n    \"Vila Olhos d'Água\",\n    \"Marilândia\",\n    \"Virgínia\",\n    \"Vila Minaslândia\",\n    \"Vila Nova Gameleira I\",\n    \"Vila dos Anjos\",\n    \"Ambrosina\",\n    \"Andiroba\",\n    \"Marmiteiros\",\n    \"Guaratã\",\n    \"Vila União\",\n    \"Vila Mantiqueira\",\n    \"Conjunto Novo Dom Bosco\",\n    \"Vila Nova Paraíso\",\n    \"Vila Paquetá\",\n    \"Vila Inestan\",\n    \"Vila São Gabriel Jacuí\",\n    \"Vila Nova Cachoeirinha IV\",\n    \"Vila Real II\",\n    \"Vila Nossa Senhora do Rosário\",\n    \"Vila Santo Antônio Barroquinha\",\n    \"Vila Madre Gertrudes II\",\n    \"Bela Vitória\",\n    \"Vila Maloca\",\n    \"Conjunto Lagoa\",\n    \"Vila Suzana I\",\n    \"Distrito Industrial do Jatobá\",\n    \"Pirineus\",\n    \"Vila Aeroporto Jaraguá\",\n    \"Vila Nova\",\n    \"Vila Ouro Minas\",\n    \"Três Marias\",\n    \"Vila Nova dos Milionários\",\n    \"Vila Itatiaia\",\n    \"Vila Minas Caixa\",\n    \"Bairro Industrial\",\n    \"Vila Atlântico\",\n    \"Vila Mantiqueira II\",\n    \"Vila Petrolina\",\n    \"Santa Fé\",\n    \"Vila Dom Cabral\",\n    \"Vila Itaú\",\n    \"Vila Santo Antônio\",\n    \"Vila das Flores\",\n    \"Vila Nova dos Comerciários\",\n    \"Vila do Sol\",\n    \"Vila Nova Vista\",\n    \"Vila Ipanema\",\n    \"Vila Nova Pampulha\",\n    \"Vila Nova Esperança\",\n    \"Vila Santo Antônio Bela Vista\",\n    \"Vila Vista Alegre\",\n    \"Vila Nova Bonsucesso\",\n    \"Vila Capitão Eduardo\",\n    \"Vila Primeiro de Janeiro\",\n    \"Vila Suzana II\",\n    \"Vila Solar\",\n    \"Vila Santa Rosa IV\",\n    \"Vila Paquetá I\",\n    \"Vila Santa Rosa III\",\n    \"Vila Santa Rosa I\",\n    \"Vila Santa Rosa II\",\n    \"Vila São Gabriel\",\n    \"Vila Belo Horizonte\",\n    \"Vila Vitoriosa\",\n    \"Vila Vitoriosa II\",\n    \"Vila Madre Gertrudes III\",\n    \"Vila Madre Gertrudes IV\",\n    \"Vila Madre Gertrudes V\",\n    \"Vila Itatiaia II\",\n    \"Vila Inestan II\",\n    \"Vila Nova Cachoeirinha III\",\n    \"Vila Nova Cachoeirinha II\",\n    \"Vila Nova Cachoeirinha V\",\n    \"Vila Nova Cachoeirinha VI\",\n    \"Vila Nossa Senhora Aparecida II\",\n    \"Vila Real I\",\n    \"Vila Nova Esperança II\",\n    \"Vila Madre Gertrudes VI\",\n    \"Vila Capitão Eduardo II\",\n    \"Vila Capitão Eduardo III\",\n    \"Vila Oeste II\",\n    \"Vila Mantiqueira III\",\n    \"Vila Mantiqueira IV\",\n    \"Vila Santa Rosa V\",\n    \"Vila Santa Rosa VI\",\n    \"Vila Nova dos Milionários II\",\n    \"Vila Nova dos Milionários III\",\n    \"Vila Nova Bonsucesso II\",\n    \"Vila Nova Bonsucesso III\",\n    \"Vila Belo Horizonte II\",\n    \"Vila Belo Horizonte III\",\n    \"Vila Vitoriosa III\",\n    \"Vila Vitoriosa IV\",\n    \"Vila Madre Gertrudes VII\",\n    \"Vila Madre Gertrudes VIII\",\n    \"Vila Madre Gertrudes IX\",\n    \"Vila Capitão Eduardo IV\",\n    \"Vila Capitão Eduardo V\",\n    \"Vila Oeste III\",\n    \"Vila Oeste IV\",\n    \"Vila Mantiqueira V\",\n    \"Vila Mantiqueira VI\",\n    \"Vila Santa Rosa VII\",\n    \"Vila Santa Rosa VIII\",\n    \"Vila Nova dos Milionários IV\",\n    \"Vila Nova dos Milionários V\",\n    \"Vila Nova Bonsucesso IV\",\n    \"Vila Nova Bonsucesso V\",\n    \"Vila Belo Horizonte IV\",\n    \"Vila Belo Horizonte V\",\n    \"Vila Vitoriosa V\",\n    \"Vila Vitoriosa VI\",\n    \"Vila Madre Gertrudes X\",\n    \"Vila Madre Gertrudes XI\",\n    \"Vila Capitão Eduardo VI\",\n    \"Vila Capitão Eduardo VII\",\n    \"Vila Oeste V\",\n    \"Vila Oeste VI\",\n    \"Vila Mantiqueira VII\",\n    \"Vila Mantiqueira VIII\",\n    \"Vila Santa Rosa IX\",\n    \"Vila Santa Rosa X\",\n    \"Vila Nova dos Milionários VI\",\n    \"Vila Nova dos Milionários VII\",\n    \"Vila Nova Bonsucesso VI\",\n    \"Vila Nova Bonsucesso VII\",\n    \"Vila Belo Horizonte VI\",\n    \"Vila Belo Horizonte VII\",\n    \"Vila Vitoriosa VII\",\n    \"Vila Vitoriosa VIII\",\n    \"Vila Capitão Eduardo VIII\",\n    \"Vila Capitão Eduardo IX\",\n    \"Vila Oeste VII\",\n    \"Vila Oeste VIII\",\n    \"Vila Mantiqueira IX\",\n    \"Vila Mantiqueira X\",\n    \"Vila Santa Rosa XI\",\n    \"Vila Santa Rosa XII\",\n    \"Vila Nova dos Milionários VIII\",\n    \"Vila Nova dos Milionários IX\",\n    \"Vila Nova Bonsucesso VIII\",\n    \"Vila Nova Bonsucesso IX\",\n    \"Vila Belo Horizonte VIII\",\n    \"Vila Belo Horizonte IX\",\n    \"Vila Vitoriosa IX\",\n    \"Vila Vitoriosa X\",\n    \"Vila Capitão Eduardo X\",\n    \"Vila Capitão Eduardo XI\",\n    \"Vila Oeste IX\",\n    \"Vila Oeste X\",\n    \"Vila Mantiqueira XI\",\n    \"Vila Mantiqueira XII\",\n    \"Vila Santa Rosa XIII\",\n    \"Vila Santa Rosa XIV\",\n    \"Vila Nova dos Milionários X\",\n    \"Vila Nova dos Milionários XI\",\n    \"Vila Nova Bonsucesso X\",\n    \"Vila Nova Bonsucesso XI\",\n    \"Vila Belo Horizonte X\",\n    \"Vila Belo Horizonte XI\",\n    \"Vila Vitoriosa XI\",\n    \"Vila Vitoriosa XII\",\n    \"Vila Capitão Eduardo XII\",\n    \"Vila Capitão Eduardo XIII\",\n    \"Vila Oeste XI\",\n    \"Vila Oeste XII\",\n    \"Vila Mantiqueira XIII\",\n    \"Vila Mantiqueira XIV\",\n    \"Vila Santa Rosa XV\",\n    \"Vila Santa Rosa XVI\",\n    \"Vila Nova dos Milionários XII\",\n    \"Vila Nova dos Milionários XIII\",\n    \"Vila Nova Bonsucesso XII\",\n    \"Vila Nova Bonsucesso XIII\",\n    \"Vila Belo Horizonte XII\",\n    \"Vila Belo Horizonte XIII\",\n    \"Vila Vitoriosa XIII\",\n    \"Vila Vitoriosa XIV\",\n    \"Vila Capitão Eduardo XIV\",\n    \"Vila Capitão Eduardo XV\",\n    \"Vila Oeste XIII\",\n    \"Vila Oeste XIV\",\n    \"Vila Mantiqueira XV\",\n    \"Vila Mantiqueira XVI\",\n    \"Vila Santa Rosa XVII\",\n    \"Vila Santa Rosa XVIII\",\n    \"Vila Nova dos Milionários XIV\",\n    \"Vila Nova dos Milionários XV\",\n    \"Vila Nova Bonsucesso XIV\",\n    \"Vila Nova Bonsucesso XV\",\n    \"Vila Belo Horizonte XIV\",\n    \"Vila Belo Horizonte XV\",\n    \"Vila Vitoriosa XV\",\n    \"Vila Vitoriosa XVI\",\n    \"Vila Capitão Eduardo XVI\",\n    \"Vila Capitão Eduardo XVII\",\n    \"Vila Oeste XV\",\n    \"Vila Oeste XVI\",\n    \"Vila Mantiqueira XVII\",\n    \"Vila Mantiqueira XVIII\",\n    \"Vila Santa Rosa XIX\",\n    \"Vila Santa Rosa XX\",\n    \"Vila Nova dos Milionários XVI\",\n    \"Vila Nova dos Milionários XVII\",\n    \"Vila Nova Bonsucesso XVI\",\n    \"Vila Nova Bonsucesso XVII\",\n    \"Vila Belo Horizonte XVI\",\n    \"Vila Belo Horizonte XVII\",\n    \"Vila Vitoriosa XVII\",\n    \"Vila Vitoriosa XVIII\",\n    \"Vila Capitão Eduardo XVIII\",\n    \"Vila Capitão Eduardo XIX\",\n    \"Vila Oeste XVII\",\n    \"Vila Oeste XVIII\",\n    \"Vila Mantiqueira XIX\",\n    \"Vila Mantiqueira XX\",\n    \"Vila Santa Rosa XXI\",\n    \"Vila Santa Rosa XXII\",\n    \"Vila Nova dos Milionários XIX\",\n    \"Vila Nova dos Milionários XX\",\n    \"Vila Nova Bonsucesso XVIII\",\n    \"Vila Nova Bonsucesso XIX\",\n    \"Vila Belo Horizonte XVIII\",\n    \"Vila Belo Horizonte XIX\",\n    \"Vila Vitoriosa XIX\",\n    \"Vila Vitoriosa XX\",\n    \"Vila Capitão Eduardo XX\",\n    \"Vila Capitão Eduardo XXI\",\n    \"Vila Oeste XIX\",\n    \"Vila Oeste XX\",\n    \"Vila Mantiqueira XXI\",\n    \"Vila Mantiqueira XXII\",\n    \"Vila Santa Rosa XXIII\",\n    \"Vila Santa Rosa XXIV\",\n    \"Vila Nova dos Milionários XXI\",\n    \"Vila Nova dos Milionários XXII\",\n    \"Vila Nova Bonsucesso XX\",\n    \"Vila Nova Bonsucesso XXI\",\n    \"Vila Belo Horizonte XX\",\n    \"Vila Belo Horizonte XXI\",\n    \"Vila Vitoriosa XXI\",\n    \"Vila Vitoriosa XXII\",\n    \"Vila Capitão Eduardo XXII\",\n    \"Vila Capitão Eduardo XXIII\",\n    \"Vila Oeste XXI\",\n    \"Vila Oeste XXII\",\n    \"Vila Mantiqueira XXIII\",\n    \"Vila Mantiqueira XXIV\",\n    \"Vila Santa Rosa XXV\",\n    \"Vila Santa Rosa XXVI\",\n    \"Vila Nova dos Milionários XXIII\",\n    \"Vila Nova dos Milionários XXIV\",\n    \"Vila Nova Bonsucesso XXII\",\n    \"Vila Nova Bonsucesso XXIII\",\n    \"Vila Belo Horizonte XXII\",\n    \"Vila Belo Horizonte XXIII\",\n    \"Vila Vitoriosa XXIII\",\n    \"Vila Vitoriosa XXIV\",\n    \"Vila Capitão Eduardo XXIV\",\n    \"Vila Capitão Eduardo XXV\",\n    \"Vila Oeste XXIII\",\n    \"Vila Oeste XXIV\",\n    \"Vila Mantiqueira XXV\",\n    \"Vila Mantiqueira XXVI\",\n    \"Vila Santa Rosa XXVII\",\n    \"Vila Santa Rosa XXVIII\",\n    \"Vila Nova dos Milionários XXV\",\n    \"Vila Nova dos Milionários XXVI\",\n    \"Vila Nova Bonsucesso XXIV\",\n    \"Vila Nova Bonsucesso XXV\",\n    \"Vila Belo Horizonte XXIV\",\n    \"Vila Belo Horizonte XXV\",\n    \"Vila Vitoriosa XXV\",\n    \"Vila Vitoriosa XXVI\",\n    \"Vila Capitão Eduardo XXVI\",\n    \"Vila Capitão Eduardo XXVII\",\n    \"Vila Oeste XXV\",\n    \"Vila Oeste XXVI\",\n    \"Vila Mantiqueira XXVII\",\n    \"Vila Mantiqueira XXVIII\",\n    \"Vila Santa Rosa XXIX\",\n    \"Vila Santa Rosa XXX\",\n    \"Vila Nova dos Milionários XXVII\",\n    \"Vila Nova dos Milionários XXVIII\",\n    \"Vila Nova Bonsucesso XXVI\",\n    \"Vila Nova Bonsucesso XXVII\",\n    \"Vila Belo Horizonte XXVI\",\n    \"Vila Belo Horizonte XXVII\",\n    \"Vila Vitoriosa XXVII\",\n    \"Vila Vitoriosa XXVIII\",\n    \"Vila Capitão Eduardo XXVIII\",\n    \"Vila Capitão Eduardo XXIX\",\n    \"Vila Oeste XXVII\",\n    \"Vila Oeste XXVIII\",\n    \"Vila Mantiqueira XXIX\",\n    \"Vila Mantiqueira XXX\",\n    \"Vila Santa Rosa XXXI\",\n    \"Vila Santa Rosa XXXII\",\n    \"Vila Nova dos Milionários XXX\",\n    \"Vila Nova dos Milionários XXXI\",\n    \"Vila Nova Bonsucesso XXVIII\",\n    \"Vila Nova Bonsucesso XXIX\",\n    \"Vila Belo Horizonte XXVIII\",\n    \"Vila Belo Horizonte XXIX\",\n    \"Vila Vitoriosa XXIX\",\n    \"Vila Vitoriosa XXX\",\n    \"Vila Capitão Eduardo XXX\",\n    \"Vila Capitão Eduardo XXXI\",\n    \"Vila Oeste XXIX\",\n    \"Vila Oeste XXX\",\n    \"Vila Mantiqueira XXXI\",\n    \"Vila Mantiqueira XXXII\",\n    \"Vila Santa Rosa XXXIII\",\n    \"Vila Santa Rosa XXXIV\",\n    \"Vila Nova dos Milionários XXXII\",\n    \"Vila Nova dos Milionários XXXIII\",\n    \"Vila Nova Bonsucesso XXX\",\n    \"Vila Nova Bonsucesso XXXI\",\n    \"Vila Belo Horizonte XXX\",\n    \"Vila Belo Horizonte XXXI\",\n    \"Vila Vitoriosa XXXI\",\n    \"Vila Vitoriosa XXXII\",\n    \"Vila Capitão Eduardo XXXII\",\n    \"Vila Capitão Eduardo XXXIII\",\n    \"Vila Oeste XXXI\",\n    \"Vila Oeste XXXII\",\n    \"Vila Mantiqueira XXXIII\",\n    \"Vila Mantiqueira XXXIV\",\n    \"Vila Santa Rosa XXXV\",\n    \"Vila Santa Rosa XXXVI\",\n    \"Vila Nova dos Milionários XXXIV\",\n    \"Vila Nova dos Milionários XXXV\",\n    \"Vila Nova Bonsucesso XXXII\",\n    \"Vila Nova Bonsucesso XXXIII\",\n    \"Vila Belo Horizonte XXXII\",\n    \"Vila Belo Horizonte XXXIII\",\n    \"Vila Vitoriosa XXXIII\",\n    \"Vila Vitoriosa XXXIV\",\n    \"Vila Capitão Eduardo XXXIV\",\n    \"Vila Capitão Eduardo XXXV\",\n    \"Vila Oeste XXXIII\",\n    \"Vila Oeste XXXIV\",\n    \"Vila Mantiqueira XXXV\",\n    \"Vila Mantiqueira XXXVI\",\n    \"Vila Santa Rosa XXXVII\",\n    \"Vila Santa Rosa XXXVIII\",\n    \"Vila Nova dos Milionários XXXVI\",\n    \"Vila Nova dos Milionários XXXVII\",\n    \"Vila Nova Bonsucesso XXXIV\",\n    \"Vila Nova Bonsucesso XXXV\",\n    \"Vila Belo Horizonte XXXIV\",\n    \"Vila Belo Horizonte XXXV\",\n    \"Vila Vitoriosa XXXV\",\n    \"Vila Vitoriosa XXXVI\",\n    \"Vila Capitão Eduardo XXXVI\",\n    \"Vila Capitão Eduardo XXXVII\",\n    \"Vila Oeste XXXV\",\n    \"Vila Oeste XXXVI\",\n    \"Vila Mantiqueira XXXVII\",\n    \"Vila Mantiqueira XXXVIII\",\n    \"Vila Santa Rosa XXXIX\",\n    \"Vila Santa Rosa XL\",\n    \"Vila Nova dos Milionários XXXVIII\",\n    \"Vila Nova dos Milionários XXXIX\",\n    \"Vila Nova Bonsucesso XXXVI\",\n    \"Vila Nova Bonsucesso XXXVII\",\n    \"Vila Belo Horizonte XXXVI\",\n    \"Vila Belo Horizonte XXXVII\",\n    \"Vila Vitoriosa XXXVII\",\n    \"Vila Vitoriosa XXXVIII\",\n    \"Vila Capitão Eduardo XXXVIII\",\n    \"Vila Capitão Eduardo XXXIX\",\n    \"Vila Oeste XXXVII\",\n    \"Vila Oeste XXXVIII\",\n    \"Vila Mantiqueira XXXIX\",\n    \"Vila Mantiqueira XL\",\n    \"Vila Santa Rosa XLI\",\n    \"Vila Santa Rosa XLII\",\n    \"Vila Nova dos Milionários XL\",\n    \"Vila Nova dos Milionários XLI\",\n    \"Vila Nova Bonsucesso XXXVIII\",\n    \"Vila Nova Bonsucesso XXXIX\",\n    \"Vila Belo Horizonte XXXVIII\",\n    \"Vila Belo Horizonte XXXIX\",\n    \"Vila Vitoriosa XXXIX\",\n    \"Vila Vitoriosa XL\",\n    \"Vila Capitão Eduardo XL\",\n    \"Vila Capitão Eduardo XLI\",\n    \"Vila Oeste XXXIX\",\n    \"Vila Oeste XL\",\n    \"Vila Mantiqueira XLI\",\n    \"Vila Mantiqueira XLII\",\n    \"Vila Santa Rosa XLIII\",\n    \"Vila Santa Rosa XLIV\",\n    \"Vila Nova dos Milionários XLII\",\n    \"Vila Nova dos Milionários XLIII\",\n    \"Vila Nova Bonsucesso XL\",\n    \"Vila Nova Bonsucesso XLI\",\n    \"Vila Belo Horizonte XL\",\n    \"Vila Belo Horizonte XLI\",\n    \"Vila Vitoriosa XLI\",\n    \"Vila Vitoriosa XLII\",\n    \"Vila Capitão Eduardo XLII\",\n    \"Vila Capitão Eduardo XLIII\",\n    \"Vila Oeste XLI\",\n    \"Vila Oeste XLII\",\n    \"Vila Mantiqueira XLIII\",\n    \"Vila Mantiqueira XLIV\",\n    \"Vila Santa Rosa XLV\",\n    \"Vila Santa Rosa XLVI\",\n    \"Buritis\",\n    \"Padre Eustáquio\",\n    \"Lindéia\",\n    \"Santa Mônica\",\n    \"Céu Azul\",\n    \"Santa Cruz(ZN)\",\n    \"Santa Cruz(ZL)\",\n    \"Santo Antônio\",\n    \"Alto Vera Cruz\",\n    \"Jardim dos Comerciários\",\n    \"Piratininga\",\n    \"Mantiqueira\",\n    \"Serra\",\n    \"Sion\",\n    \"Lourdes\",\n    \"Santa Amélia\",\n    \"Cabana do Pai Tomás\",\n    \"Santa Efigênia(ZL)\",\n    \"Santa Efigênia(HC)\",\n    \"Pindorama\",\n    \"Boa Vista\",\n    \"Gutierrez\",\n    \"Ouro Preto\",\n    \"Castelo\",\n    \"Planalto\",\n    \"São João Batista\",\n    \"Centro\",\n    \"Goiânia\",\n    \"Jaqueline\",\n    \"Ribeiro de Abreu\",\n    \"Santa Terezinha\",\n    \"Santa Tereza\",\n    \"Jardim Felicidade\",\n    \"Cidade Nova\",\n    \"Carlos Prates(ZO)\",\n    \"Carlos Prates(HC)\",\n    \"Havaí\",\n    \"Nova Suissa\",\n    \"Conjunto Taquaril\",\n    \"União\",\n    \"Salgado Filho\",\n    \"Araguaia\",\n    \"Glória\",\n    \"Serra Verde\",\n    \"São Geraldo\",\n    \"Prado\",\n    \"São Gabriel\",\n    \"Tupi B\",\n    \"Paraíso\",\n    \"Copacabana\",\n    \"Caiçaras\",\n    \"Camargos\",\n    \"Rio Branco\",\n    \"Anchieta\",\n    \"Ipiranga\",\n    \"Milionários\",\n    \"Betânia\",\n    \"Diamante\",\n    \"Floresta(HC)\",\n    \"Floresta(ZL)\",\n    \"Savassi\",\n    \"Jardim Guanabara\",\n    \"Vila Vista Alegre\",\n    \"Tirol\",\n    \"Jardim América(ZO)\",\n    \"Jardim América(ZS)\",\n    \"Caiçara-Adelaide\",\n    \"Concórdia\",\n    \"Tupi A\",\n    \"Minascaixa\",\n    \"Cardoso\",\n    \"Colégio Batista(ZL)\",\n    \"Colégio Batista(HC)\",\n    \"Barreiro\",\n    \"Europa\",\n    \"Serrano\",\n    \"Jardim Alvorada(ZO)\",\n    \"Jardim Alvorada(ZN)\",\n    \"Santo Agostinho\",\n    \"Aparecida\",\n    \"Floramar\",\n    \"Dom Bosco\",\n    \"João Pinheiro\",\n    \"Nossa Senhora de Fátima\",\n    \"Jardim Vitória\",\n    \"Alípio de Melo\",\n    \"Nova Gameleira\",\n    \"Itapoã\",\n    \"Jardim Leblon\",\n    \"Cachoeirinha\",\n    \"Bairro das Indústrias I\",\n    \"Santa Inês\",\n    \"Lagoa\",\n    \"São Bernardo\",\n    \"Renascença\",\n    \"Dona Clara\",\n    \"Funcionários\",\n    \"Belvedere\",\n    \"Maria Goretti\",\n    \"Nova Vista\",\n    \"Independência\",\n    \"Novo Aarão Reis\",\n    \"Manacás\"\n]"
+				}
+			]
+		}
+	]
+}
